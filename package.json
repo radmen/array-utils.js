@@ -1,0 +1,21 @@
+{
+  "name": "@radmen/array-utils",
+  "version": "1.0.0",
+  "description": "Simple function utils for dealing with arrays",
+  "main": "index.js",
+  "scripts": {
+    "mocha": "mocha --compilers js:babel-register test.js",
+    "test": "npm run mocha"
+  },
+  "author": {
+      "name": "Radoslaw Mejer",
+      "email": "radmen@radmen.info"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.0.2"
+  }
+}
