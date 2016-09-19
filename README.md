@@ -63,7 +63,7 @@ const values = ['foo', 'bar', 'baz'];
 values.sort(pushToTop(item => item === 'baz')); // ['baz', 'foo', 'bar'];
 ```
 
-## filterByValues(value[, secondValue[, ...]])
+## filterByValue(value[, secondValue[, ...]])
 Filters array values by given value.
 
 ```js
