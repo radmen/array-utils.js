@@ -64,7 +64,7 @@ describe('array-utils', () => {
   describe('filtering', () => {
     it('excludes empty values', () => {
       const values = ['foo', 0, 'bar'];
-      expect(values.filter(utils.excludeEmpty)).toEqual(['foo', 'bar']);
+      expect(values.filter(utils.excludeEmpty())).toEqual(['foo', 'bar']);
     });
 
     it('filters array by value', () => {
@@ -107,7 +107,7 @@ describe('array-utils', () => {
   describe('reducing', () => {
     it('collapses arrays', () => {
       const values = [[1, 2], [3, 4], [5]];
-      expect(values.reduce(utils.collapse)).toEqual([1, 2, 3, 4, 5]);
+      expect(values.reduce(utils.collapse())).toEqual([1, 2, 3, 4, 5]);
     });
   });
 });

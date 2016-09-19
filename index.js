@@ -1,6 +1,6 @@
 const negatePredicate = predicate => (...args) => !predicate(...args);
 
-export const excludeEmpty = item => !!item;
+export const excludeEmpty = () => item => !!item;
 
 export const replaceWith = (predicate, replaceWithData) => item => {
   if (!predicate(item)) {
@@ -32,4 +32,4 @@ export const filterByValue = (...values) => item => values.some(valueToFilter(it
 
 export const filterByKeyValue = (key, ...values) => item => filterByValue(...values)(item[key]);
 
-export const collapse = (current, item) => [...current, ...item];
+export const collapse = () => (current, item) => [...current, ...item];
