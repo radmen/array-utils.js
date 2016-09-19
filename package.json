@@ -1,7 +1,7 @@
 {
   "name": "@radmen/array-utils",
   "version": "1.0.0",
-  "description": "Simple function utils for dealing with arrays",
+  "description": "Set of simple callback functions for daily work with arrays",
   "main": "index.js",
   "scripts": {
     "mocha": "mocha --compilers js:babel-register test.js",
