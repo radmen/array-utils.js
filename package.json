@@ -1,6 +1,6 @@
 {
   "name": "@radmen/array-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Set of simple callback functions for daily work with arrays",
   "main": "dist/index.js",
   "module": "src/index.js",
