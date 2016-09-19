@@ -1,5 +1,5 @@
 import expect from 'expect';
-import * as utils from './index';
+import * as utils from '../src/index';
 
 describe('array-utils', () => {
   it('replaces values for given predicate', () => {
