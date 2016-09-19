@@ -104,6 +104,3 @@ import {collapse} from '@radmen/array-utils';
 const values = [[1, 2], [3, 4], [5]];
 values.reduce(collapse()); // [1, 2, 3, 4, 5];
 ```
-
-# ES6 only
-This package is provided only in ES6 version. I'm not planning to compile it back to ES5.
