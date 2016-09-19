@@ -26,5 +26,10 @@ export const pushToBottom = predicate => (a, b) => {
 
 export const pushToTop = predicate => pushToBottom(negatePredicate(predicate));
 
-// @TODO equals helper - equals(value) => item => item === value;
-// @TODO keyEquals helper - keyEquals(key, value) => item => item[key] === value;
+const valueToFilter = value => item => item === value;
+
+export const filterByValue = (...values) => item => values.some(valueToFilter(item));
+
+export const filterByKeyValue = (key, ...values) => item => filterByValue(...values)(item[key]);
+
+export const collapse = (current, item) => [...current, ...item];
